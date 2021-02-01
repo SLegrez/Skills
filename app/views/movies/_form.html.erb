@@ -1,0 +1,13 @@
+<%= simple_form_for(@movie) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+  <%= f.label :rated %>
+  <%= f.number_field :rated %>
+  <%= f.label :duration %>
+  <%= f.number_field :duration %>
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+  <%= f.submit %>
+<% end %>
