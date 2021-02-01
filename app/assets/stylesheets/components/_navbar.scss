@@ -1,14 +1,15 @@
+#border-right {
+  border-right: solid 1px black;
+}
 .navbar-top {
   display: flex;
   width: 100%;
   height: 4em;
   background-color: wheat;
-  margin-top: 10px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   a {
-    color: black !important;
-    display: block;
+    color: black;
     margin: 10px;
     padding: 10px 0px;
     text-decoration: none;
@@ -20,44 +21,9 @@
     color: black;
   }
   ul {
+    display: flex;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-  }
-  ul li {
-    float: left;
-    text-align: center;
-    position: relative;
-  }
-  ul:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  ul li:hover .under {
-    display: block;
-  }
-  .under {
-    display: none;
-    box-shadow: 0px 1px 2px #CCC;
-    background-color:wheat;
-    position: absolute;
-    z-index: 1000;
-    width: 100%;
-  }
-  .under li {
-    float: none;
-    width: 100%;
-    text-align: center;
-    font-size: 0.8rem;
-  }
-  .under a {
-    padding: 10px;
-    border-bottom: none;
-  }
-  .under a:hover {
-    border-bottom: none;
-    background-color: burlywood;
-    border-radius: 2px;
   }
 }
