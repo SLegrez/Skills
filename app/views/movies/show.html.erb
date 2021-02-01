@@ -1,12 +1,12 @@
 <h2><%= @movie.title %></h2>
-<p><%= @movie.year %></p>
-<p><%= @movie.rated %></p>
-<p><%= @movie.duration %></p>
-<p><%= @movie.genre %></p>
+<p>Année : <%= @movie.year %></p>
+<p>Note : <%= @movie.rated %>/5</p>
+<p>Durée : <%= @movie.duration %>mn</p>
+<p>Genre : <%= @movie.genre %></p>
 
 <%= link_to "Edit", edit_movie_path(@movie) %>
-
-<%= link_to "Delete #{@movie.title}",
+<br>
+<%= link_to "Delete",
             movie_path(@movie),
             method: :delete,
             data: { confirm: "Are you sure?" } %>
