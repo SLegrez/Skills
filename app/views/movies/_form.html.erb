@@ -1,19 +1,18 @@
-<form>
-  <div class="form-row">
-    <%= simple_form_for [ @movie ] do |f| %>
+  <%= simple_form_for [ @movie ] do |f| %>
 
-    <div class="form-group col-md-6"><%= f.input :title %></div>
-    <div class="form-group col-md-6"><%= f.input :year %></div>
+  <div class="flex-input">
+    <%= f.input :title %>
+    <%= f.input :year %>
   </div>
-    <%= f.input :rated %>
-    <%= f.input :duration %>
-    <%= f.input :genre %>
+  
+  <%= f.input :rated %>
+  <%= f.input :duration %>
+  <%= f.input :genre %>
 
-    <% if current_page?(new_movie_path) %>
-      <%= f.submit "Create movie", class: "btn btn-primary"%>
-    <% else %>
-      <%= f.submit "Edit movie", class: "btn btn-primary"%> 
-    <% end %>
-
+  <% if current_page?(new_movie_path) %>
+    <%= f.submit "Create movie", class: "btn btn-primary"%>
+  <% else %>
+    <%= f.submit "Edit movie", class: "btn btn-primary"%> 
   <% end %>
-</form>
+
+<% end %>
