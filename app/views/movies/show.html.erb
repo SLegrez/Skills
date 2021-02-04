@@ -1,23 +1,25 @@
-<h2><%= @movie.title %></h2>
+<div class="index-container">
+  <h2><%= @movie.title %></h2>
 
-<p>Année : <%= @movie.year %></p>
-<p>Note : <%= @movie.rated %>/5</p>
-<p>Durée : <%= @movie.duration %>mn</p>
-<p>Genre : <%= @movie.genre %></p>
+  <p>Année : <%= @movie.year %></p>
+  <p>Note : <%= @movie.rated %>/5</p>
+  <p>Durée : <%= @movie.duration %>mn</p>
+  <p>Genre : <%= @movie.genre %></p>
 
-<ul class="list-group">
-  <% @movie.reviews.each do |review| %>
-    <li class="list-group-item"><%= review.content %>
-    <%= link_to "Remove",
-                  review_path(review),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
-  <% end %>
-</ul>
+  <p>Review(s) :</p><ul class="list-group">
+    <% @movie.reviews.each do |review| %>
+      <li class="list-group-item">" <span class="italic"><%= review.content %></span> " | 
+      <%= link_to "Remove",
+                    review_path(review),
+                    method: :delete,
+                    data: { confirm: "Are you sure?" } %></li>
+    <% end %>
+  </ul>
 
-<%= link_to "Edit", edit_movie_path(@movie) %>
-<%= link_to "Leave a review", new_movie_review_path(@movie) %>
-<%= link_to "Delete",
-            movie_path(@movie),
-            method: :delete,
-            data: { confirm: "Are you sure?" } %>
+  <p><%= link_to "Edit", edit_movie_path(@movie) %></p>
+  <p><%= link_to "Leave a review", new_movie_review_path(@movie) %></p>
+  <p><%= link_to "Delete",
+              movie_path(@movie),
+              method: :delete,
+              data: { confirm: "Are you sure?" } %></p>
+</div>

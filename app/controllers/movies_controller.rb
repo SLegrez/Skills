@@ -14,9 +14,12 @@ class MoviesController < ApplicationController
 
   def create
     @movie = Movie.new(movie_params)
-    @movie.save
 
-    redirect_to movie_path(@movie)
+    if @movie.save
+      redirect_to movie_path(@movie)
+    else
+      render :new
+    end
   end
 
   def edit
