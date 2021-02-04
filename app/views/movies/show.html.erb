@@ -1,5 +1,6 @@
 <div class="index-container">
   <h2 class="list-group"><%= @movie.title %></h2>
+  <%= cl_image_tag @movie.photo.key, height: 300, width: 400, crop: :fill %>
 
   <p>Année : <%= @movie.year %></p>
   <p>Note : <%= @movie.rated %>/5</p>

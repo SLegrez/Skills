@@ -8,6 +8,7 @@
   <%= f.input :rated %>
   <%= f.input :duration %>
   <%= f.input :genre %>
+  <%= f.input :photo, as: :file %>
 
   <% if current_page?(new_movie_path) %>
     <%= f.submit "Create movie", class: "btn btn-primary"%>
