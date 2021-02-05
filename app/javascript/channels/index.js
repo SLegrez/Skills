@@ -20,9 +20,9 @@ const searchMovies = (query) => {
         results.insertAdjacentHTML("beforeend", movieList);
       });;
     });
+};
 
 const form = document.querySelector('#search-movies');
-
 form.addEventListener('submit', (event) => {
   event.preventDefault(); // <-- to prevent <form>'s native behaviour
   const input = event.currentTarget.querySelector('.form-control');
