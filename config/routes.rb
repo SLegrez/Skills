@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   end
   resources :reviews, only: [ :destroy ]
 
+  get 'api', to: 'pages#api'
 end
