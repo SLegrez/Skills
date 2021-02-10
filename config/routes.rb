@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :reviews, only: [ :destroy ]
 
   get 'api', to: 'pages#api'
+  get 'auth_api', to: 'pages#auth_api'
 end
