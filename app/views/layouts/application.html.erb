@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Skills</title>
+    <title>Mon petit labo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Bienvenue sur mon petit labo ! Ce petit site sans
+    prétention est dédié à certaines expérimentations personnelles avec le web à des fins de
+    tests mais aussi pour pouvoir montrer une partie de mes compétences techniques.">
+    <link rel="shortcut icon" href="../assets/microscope.png"/>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,9 +16,7 @@
   </head>
 
   <body>
-    <%# unless current_page?(root_path) %>
-      <%= render 'shared/navbar' %>
-    <%# end %>
+    <%= render 'shared/navbar' %>
     <%= yield %>
   </body>
 </html>
