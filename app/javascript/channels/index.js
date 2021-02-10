@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
       // console.log(data)
       data.Search.forEach((result) => {
           const movieList = `<li class="list-inline-item">
-            <img src="${result.Poster}" alt="">
             <p>${result.Title}</p>
+            <img src="${result.Poster}" class="img-grid" alt="">
             </li>`;
-            // console.log(movieList)
+            // console.log(result.Title)
 
           results.insertAdjacentHTML("beforeend", movieList);
         });;

@@ -1,0 +1,20 @@
+.api-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.form-inline {
+  margin-bottom: 1em !important;
+}
+.img-grid {
+  border-radius: 10px;
+  margin: 0em 1em 1em 1em;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 80%;
+}
+.ul-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
