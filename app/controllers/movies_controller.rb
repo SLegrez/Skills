@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  skip_forgery_protection
   before_action :set_movie, only: [:show, :edit, :update, :destroy]
 
   def index
