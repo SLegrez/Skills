@@ -8,7 +8,7 @@ channels.keys().forEach(channels)
 document.addEventListener("DOMContentLoaded", function() {
   const results = document.querySelector("#results");
   const searchMovies = (query) => {
-    fetch(`http://www.omdbapi.com/?s=${query}&apikey=adf1f2d7`)
+    fetch(`https://www.omdbapi.com/?s=${query}&apikey=adf1f2d7`)
     .then(response => response.json())
     .then((data) => {
       // console.log(data)
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
           <p>${result.Title}</p>
           <img src="${result.Poster}" class="img-grid" alt="">
           </li>`;
-          console.log(result.Title)
+          // console.log(result.Title)
 
         results.insertAdjacentHTML("beforeend", movieList);
       });;
