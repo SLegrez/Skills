@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
-
+  skip_forgery_protection
+  
   def new
     @movie = Movie.find(params[:movie_id])
     @review = Review.new
