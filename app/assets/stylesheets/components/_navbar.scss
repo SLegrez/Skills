@@ -8,7 +8,7 @@
     color: black;
   }
   a:hover {
-    color: blue;
+    color: black;
     text-decoration: none;
   }
 }
@@ -37,4 +37,11 @@
     margin: 0px;
     padding: 0px;
   }
+}
+.title {
+  font-family: 'Red Hat Display', sans-serif;
+  box-shadow: #efe1b4 0px -1rem 0px inset;
+}
+.title:hover {
+  font-style: italic;
 }

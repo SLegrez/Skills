@@ -4,6 +4,7 @@
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
 
+// window.onload = function() {
 document.addEventListener("DOMContentLoaded", function() {
   const results = document.querySelector("#results");
   const searchMovies = (query) => {
@@ -12,17 +13,16 @@ document.addEventListener("DOMContentLoaded", function() {
     .then((data) => {
       // console.log(data)
       data.Search.forEach((result) => {
-          const movieList = `<li class="list-inline-item">
-            <p>${result.Title}</p>
-            <img src="${result.Poster}" class="img-grid" alt="">
-            </li>`;
-            // console.log(result.Title)
+        const movieList = `<li class="list-inline-item">
+          <p>${result.Title}</p>
+          <img src="${result.Poster}" class="img-grid" alt="">
+          </li>`;
+          console.log(result.Title)
 
-          results.insertAdjacentHTML("beforeend", movieList);
-        });;
-      });
+        results.insertAdjacentHTML("beforeend", movieList);
+      });;
+    });
   };
-
   const form = document.querySelector("#search-movies");
   form.addEventListener('submit', (event) => {
     event.preventDefault();
