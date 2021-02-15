@@ -23,3 +23,17 @@ fr:
     <span class='italic'>l'effacer</span>.</p>"
     go: "C'est parti 👉"
     create_movie: "Créer un film"
+
+    show:
+      year: "Année"
+      rate: "Note"
+      duration: "Durée"
+      type: "Genre"
+      
+      reviews: "Avi(s)"
+      remove_review: "Retirer"
+      confirm: "Êtes vous sûr ?"
+      
+      edit_movie: "Modifier le film"
+      put_review: "Ajouter un avis"
+      delete_movie: "Supprimer le film"

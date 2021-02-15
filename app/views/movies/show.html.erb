@@ -2,24 +2,24 @@
   <h2 class="list-group"><%= @movie.title %></h2>
   <%= cl_image_tag @movie.photo.key, class: :contain %>
 
-  <p>Année : <%= @movie.year %></p>
-  <p>Note : <%= @movie.rated %>/5</p>
-  <p>Durée : <%= @movie.duration %>mn</p>
-  <p>Genre : <%= @movie.genre %></p>
+  <p><%= t 'CRUD.show.year' %> : <%= @movie.year %></p>
+  <p><%= t 'CRUD.show.rate' %> : <%= @movie.rated %>/5</p>
+  <p><%= t 'CRUD.show.duration' %> : <%= @movie.duration %>mn</p>
+  <p><%= t 'CRUD.show.type' %> : <%= @movie.genre %></p>
 
-  <p>Review(s) :</p><ul class="list-group">
+  <p><%= t 'CRUD.show.reviews' %> :</p><ul class="list-group">
     <% @movie.reviews.each do |review| %>
       <li class="list-group-item">" <span class="italic"><%= review.content %></span> " | 
-      <%= link_to "Remove",
+      <%= link_to t('CRUD.show.remove_review'),
                     review_path(review),
                     method: :delete,
-                    data: { confirm: "Are you sure?" } %></li>
+                    data: { confirm: t('CRUD.show.confirm') } %></li>
     <% end %>
   </ul>
 
-  <p><%= link_to "Edit", edit_movie_path(@movie) %></p>
-  <p><%= link_to "Leave a review", new_movie_review_path(@movie) %></p>
-  <p><%= link_to "Delete",
+  <p><%= link_to t('CRUD.show.edit_movie'), edit_movie_path(@movie) %></p>
+  <p><%= link_to t('CRUD.show.put_review'), new_movie_review_path(@movie) %></p>
+  <p><%= link_to t('CRUD.show.delete_movie'),
               movie_path(@movie),
               method: :delete,
               data: { confirm: "Are you sure?" } %></p>

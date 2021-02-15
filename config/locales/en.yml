@@ -23,3 +23,17 @@ en:
     class='italic'>destroy</span> it.</p>"
     go: "Let's go 👉"
     create_movie: "Create a movie"
+
+    show:
+      year: "Year"
+      rate: "Rate"
+      duration: "Duration"
+      type: "Type"
+      
+      reviews: "Review(s)"
+      remove_review: "Remove"
+      confirm: "Are you sure ?"
+      
+      edit_review: "Edit movie"
+      put_review: "Add a review"
+      delete_review: "Delete movie"
