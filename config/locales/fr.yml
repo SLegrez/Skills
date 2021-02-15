@@ -44,3 +44,12 @@ fr:
     submit_review: "Ajouter commentaire"
     # good_rate: "De 0 à 5"
     # good_duration: "De 45 à 600"
+
+  API:
+    text_html: "<p>Bievenue dans la section <span class='bold'>API</span>. Nous allons utiliser
+    l'API RESTful d'<span class='italic'>OMDb</span> avec laquelle vous pourrez rechercher un
+    titre de film et l'afficher avec son image d'illustration. </p>"
+    bug_html: "<p class='small-font-size italic'>Il faut actuellement cliquer 2 fois pour voir
+    apparaître les
+    résultats, le bug sera bientôt résolu</p>"
+    search: "Rechercher"
