@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: redirect("/#{I18n.default_locale}"), as: :redirected_root
+  # root to: redirect("/#{I18n.default_locale}"), as: :redirected_root
 
   scope "(:locale)", locale: /fr|en/ do
     root to: "pages#home"
