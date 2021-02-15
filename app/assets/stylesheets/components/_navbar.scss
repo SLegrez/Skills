@@ -18,7 +18,7 @@
   height: 4em;
   background-color: wheat;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   a {
     color: black;
     margin: 10px;
@@ -35,7 +35,7 @@
     display: flex;
     list-style-type: none;
     margin: 0px;
-    padding: 0px;
+    // padding: 0px;
   }
 }
 .title {
