@@ -40,5 +40,7 @@ en:
 
   form:
     title: "Title"
-    good_rate: "From 0 to 5"
-    good_duration: "From 45 to 600"
+    content: "Content"
+    submit_review: "Add review"
+    # good_rate: "From 0 to 5"
+    # good_duration: "From 45 to 600"

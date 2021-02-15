@@ -40,5 +40,7 @@ fr:
 
   form:
     title: "Titre"
-    good_rate: "De 0 à 5"
-    good_duration: "De 45 à 600"
+    content: "Commentaire"
+    submit_review: "Ajouter commentaire"
+    # good_rate: "De 0 à 5"
+    # good_duration: "De 45 à 600"

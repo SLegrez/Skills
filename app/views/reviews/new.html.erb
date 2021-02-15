@@ -1,6 +1,6 @@
 <div class="new-container">
   <%= simple_form_for [ @movie, @review ] do |f| %>
-    <%= f.input :content %>
-    <%= f.submit "Submit review", class: "btn btn-primary" %>
+    <%= f.input :content, label: t('form.content') %>
+    <%= f.submit t('form.submit_review'), class: "btn btn-primary" %>
   <% end %>
 </div>
