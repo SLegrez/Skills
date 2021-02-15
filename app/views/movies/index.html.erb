@@ -1,12 +1,9 @@
 <div class="index-container">
 
-  <p>Welcome in the <span class="bold">CRUD</span> movie section. Here you will be able to <span
-  class="italic">create</span> a movie, to <span class="italic">display</span> it on this page,
-  to <span class="italic">edit</span> it, to write a review about it and to <span
-  class="italic">destroy</span> it.</p>
+  <%= t 'CRUD.text_html' %>
 
-  <p>Let's go 👉 <button class="btn btn-warning"><%= link_to 'Create a movie', new_movie_path
-  %></button></p>
+  <p><%= t 'CRUD.go' %> <button class="btn btn-warning"><%= link_to (t 'CRUD.create_movie'),
+  new_movie_path %></button></p>
 
   <ul class="no-bullet">
     <% @movies.each do |movie| %>

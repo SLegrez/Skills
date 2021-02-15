@@ -1,33 +1,25 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  site_title: "My little lab"
+
+  home:
+    text_html: "<p><span class='bold big'>Welcome</span> on <span class='italic'>my little
+    lab</span> ! This little website without pretention is dedicated to some personal
+    experiments with the web for testing purposes but also to demonstrate a part of my technical
+    skills.</p>
+    
+    <p>That means that the site will continually be under construction but also that new things
+    may appear in the future.</p>"
+  
+    link_features:
+      movie: "> Create your own movie 👉"
+      api: "> Find a movie with the OMDb API 👉"
+    
+    link: "Here"
+
+  CRUD:
+    text_html: "<p>Welcome in the <span class='bold'>CRUD</span> movie section. Here you will be
+    able to <span class='italic'>create</span> a movie, to <span class='italic'>display</span> it
+    on this page, to <span class='italic'>edit</span> it, to write a review about it and to <span
+    class='italic'>destroy</span> it.</p>"
+    go: "Let's go 👉"
+    create_movie: "Create a movie"

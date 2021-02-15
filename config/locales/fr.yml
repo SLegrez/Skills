@@ -1,0 +1,25 @@
+fr:
+  site_title: "Mon petit labo"
+
+  home:
+    text_html: "<p><span class='bold big'>Bienvenue</span> sur <span class='italic'>mon petit
+    labo</span> ! Ce petit site sans prétention est dédié à certaines expérimentations
+    personnelles avec le web à des fins de tests mais aussi pour pouvoir montrer une partie de
+    mes compétences techniques.</p>
+
+    <p>Cela signifie que le site est et sera continuellement en construction mais aussi que de
+    nouvelles choses peuvent apparaître à l'avenir.</p>"
+
+    link_features:
+      movie: "> Créez votre propre film 👉"
+      api: "> Trouvez un film à l'aide de l'API d'OMDb 👉"
+    
+    link: "Par ici"
+
+  CRUD:
+    text_html: "<p>Bienvenue dans la section <span class='bold'>CRUD</span> pour film. Ici vous
+    pourrez <span class='italic'>créer</span> un film, le <span class='italic'>publier</span> sur
+    cette même page, <span class='italic'>l'éditer</span>, écrire un avis à propos du-dit film et
+    <span class='italic'>l'effacer</span>.</p>"
+    go: "C'est parti 👉"
+    create_movie: "Créer un film"

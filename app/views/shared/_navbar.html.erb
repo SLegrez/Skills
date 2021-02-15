@@ -1,5 +1,5 @@
 <div class="nav-container">
-  <h1><%= link_to 'Mon petit labo', root_path, class: :title %></h1>
+  <h1><%= link_to (t 'site_title'), root_path, class: :title %></h1>
 
   <div class="navbar-top">
     <ul>
@@ -7,6 +7,11 @@
       <li class="border-r"><%= link_to 'API', api_path %></li>
       <li><%= link_to 'AUTH + API', auth_api_path %></li>
     </ul>
+    <% if I18n.locale == I18n.default_locale %>
+      <%= link_to 'EN', { locale: 'en' } %>
+    <% else %>
+      <%= link_to 'FR', { locale: 'fr' } %>
+    <%end%>
   </div>
   
 </div>
