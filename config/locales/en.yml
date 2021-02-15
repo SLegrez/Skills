@@ -34,6 +34,11 @@ en:
       remove_review: "Remove"
       confirm: "Are you sure ?"
       
-      edit_review: "Edit movie"
+      edit_movie: "Edit movie"
       put_review: "Add a review"
-      delete_review: "Delete movie"
+      delete_movie: "Delete movie"
+
+  form:
+    title: "Title"
+    good_rate: "From 0 to 5"
+    good_duration: "From 45 to 600"

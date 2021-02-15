@@ -37,3 +37,8 @@ fr:
       edit_movie: "Modifier le film"
       put_review: "Ajouter un avis"
       delete_movie: "Supprimer le film"
+
+  form:
+    title: "Titre"
+    good_rate: "De 0 à 5"
+    good_duration: "De 45 à 600"

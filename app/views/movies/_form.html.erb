@@ -1,19 +1,19 @@
   <%= simple_form_for [ @movie ] do |f| %>
 
   <div class="flex-input">
-    <%= f.input :title %>
-    <%= f.input :year %>
+    <%= f.input :title, label: t('form.title') %>
+    <%= f.input :year, label: t('CRUD.show.year') %>
   </div>
   
-  <%= f.input :rated %>
-  <%= f.input :duration %>
-  <%= f.input :genre %>
+  <%= f.input :rated, label: t('CRUD.show.rate') %>
+  <%= f.input :duration, label: t('CRUD.show.duration') %>
+  <%= f.input :genre, label: t('CRUD.show.type') %>
   <%= f.input :photo, as: :file %>
 
   <% if current_page?(new_movie_path) %>
-    <%= f.submit "Create movie", class: "btn btn-primary"%>
+    <%= f.submit t('CRUD.create_movie'), class: "btn btn-primary"%>
   <% else %>
-    <%= f.submit "Edit movie", class: "btn btn-primary"%> 
+    <%= f.submit t('CRUD.show.edit_movie'), class: "btn btn-primary"%> 
   <% end %>
 
 <% end %>
