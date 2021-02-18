@@ -2,8 +2,8 @@
 
   <%= t 'CRUD.text_html' %>
 
-  <p><%= t 'CRUD.go' %> <button class="btn btn-warning"><%= link_to (t 'CRUD.create_movie'),
-  new_movie_path %></button></p>
+  <p><%= t 'CRUD.go' %> <button class="btn btn-primary"><%= link_to (t 'CRUD.create_movie'),
+  new_movie_path, class: :white %></button></p>
 
   <ul class="no-bullet">
     <% @movies.each do |movie| %>
