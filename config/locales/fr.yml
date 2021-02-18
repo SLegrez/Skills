@@ -49,7 +49,4 @@ fr:
     text_html: "<p>Bievenue dans la section <span class='bold'>API</span>. Nous allons utiliser
     l'API RESTful d'<span class='italic'>OMDb</span> avec laquelle vous pourrez rechercher un
     titre de film et l'afficher avec son image d'illustration. </p>"
-    bug_html: "<p class='small-font-size italic'>Il faut actuellement cliquer 2 fois pour voir
-    apparaître les
-    résultats, le bug sera bientôt résolu</p>"
     search: "Rechercher"

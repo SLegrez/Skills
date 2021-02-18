@@ -11,3 +11,9 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import { callOmdb } from '../components/apiCall';
+
+document.addEventListener('turbolinks:load', () => {
+  callOmdb();
+});
