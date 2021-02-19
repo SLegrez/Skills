@@ -14,6 +14,11 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   height: 80%;
   width: 80%;
+  transition: 0.2s;
+}
+.img-grid:hover {
+  transform: translateY(-10px);
+  transition: 0.2s;
 }
 .small-font-size {
   font-weight: lighter;
