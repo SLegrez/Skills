@@ -15,10 +15,10 @@
   height: 80%;
   width: 80%;
   transition: 0.2s;
-}
-.img-grid:hover {
-  transform: translateY(-10px);
-  transition: 0.2s;
+    &:hover {
+      transition: 0.2s;
+      transform: scale(1.08);
+    }
 }
 .small-font-size {
   font-weight: lighter;
