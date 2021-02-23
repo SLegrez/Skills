@@ -17,7 +17,7 @@ en:
     link: "Here"
 
   CRUD:
-    text_html: "<p>Welcome in the <span class='bold'>CRUD</span> movie section. Here you will be
+    text_html: "<p class='justify'>Welcome in the <span class='bold'>CRUD</span> movie section. Here you will be
     able to <span class='italic'>create</span> a movie, to <span class='italic'>display</span> it
     on this page, to <span class='italic'>edit</span> it, to write a review about it and to <span
     class='italic'>destroy</span> it.</p>"
@@ -46,7 +46,7 @@ en:
     # good_duration: "From 45 to 600"
 
   API:
-    text_html: "<p>Welcome in the <span class='bold'>API</span> section. We will use the <span
+    text_html: "<p class='justify'>Welcome in the <span class='bold'>API</span> section. We will use the <span
     class='italic'>OMDb RESTful API</span> with which you will be able to search a movie title
     and display it with its illustration image.</p>"
     search: "Search"
